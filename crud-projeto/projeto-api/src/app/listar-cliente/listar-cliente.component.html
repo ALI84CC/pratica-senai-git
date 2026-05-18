@@ -1,0 +1,7 @@
+<tr *ngFor="let cliente of clientes">
+    <th scope="row">{{cliente.id}}</th>
+    <td>{{cliente.nome}}</td>
+    <td>{{cliente.endereco}}</td>
+    <td><a mat-raised-button color="primary“
+    routerLink="../editar/{{cliente.id}}">Editar</a></td>
+<td>
